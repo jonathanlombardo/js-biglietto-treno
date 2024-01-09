@@ -21,7 +21,7 @@
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" /> -->
 
     <!-- --BOOTSTRAP style -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
     <!-- --MY STYLE -->
     <link rel="stylesheet" href="./CSS/style.css" />
@@ -31,7 +31,38 @@
   </head>
 
   <body>
-    <h1 id="resultElement">NewProject</h1>
+    <div class="container w-50 mt-3">
+      <h3 class="border-bottom">I Tuoi Dati:</h3>
+      <div class="d-flex justify-content-between">
+        <h5>Km da percorrere:</h5>
+        <h5 id="userKM"></h5>
+      </div>
+      <div class="d-flex justify-content-between">
+        <h5>La tua età:</h5>
+        <h5 id="userAge"></h5>
+      </div>
+    </div>
+    <div class="container w-50 mt-3">
+      <h3 class="border-bottom">Subtotale:</h3>
+      <div class="d-flex justify-content-between">
+        <h5>Prezzo del viaggio:</h5>
+        <h5 id="partialPrice"></h5>
+      </div>
+      <div class="d-flex justify-content-between">
+        <h5 id="under18Label" class="d-none">Sconto Under 18:</h5>
+        <h5 id="under18Discount" class="d-none"></h5>
+      </div>
+      <div class="d-flex justify-content-between">
+        <h5 id="over65Label" class="d-none">Sconto Over 65:</h5>
+        <h5 id="over65Discount" class="d-none"></h5>
+      </div>
+    </div>
+    <div class="container w-50 mt-4">
+      <div class="d-flex justify-content-between">
+        <h1>Prezzo Finale:</h1>
+        <h1 id="finalPrice"></h1>
+      </div>
+    </div>
 
     <!-- --BOOTSTRAP SCRIPT -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
